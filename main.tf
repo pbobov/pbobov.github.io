@@ -25,4 +25,8 @@ resource "aws_ssm_parameter" "test_url" {
   value = "url"
   description = "Test URL"
   overwrite = true
+ 
+  provisioner "local-exec" {
+    command = "python --version"
+  }
 }
