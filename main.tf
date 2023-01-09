@@ -22,7 +22,7 @@ provider "aws" {
 resource "aws_ssm_parameter" "test_url" {
   name  = "/test/${var.site_id}/url"
   type  = "String"
-  value = var.url
+  value = "url"
   description = "Test URL"
   overwrite = true
 }
