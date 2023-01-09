@@ -1,5 +1,5 @@
-variable "url" {
-  description = "Test URL"
+variable "site_id" {
+  description = "Ste Id"
   type = string
-  default = "https://test.com/url"
+  default = "test-site"
 }
